@@ -1,0 +1,45 @@
+C:\Users\Antonio\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\Antonio\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\Antonio\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\Antonio\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\Antonio\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\MainWindow.baml
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\App.g.cs
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
+C:\Users\Antonio\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\MainWindow.baml
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\App.g.cs
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\Antonio\Dropbox\Otros\Carpetas Compartidas\Valenzuela\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\Valen\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\Valen\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\Valen\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\Valen\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\Valen\Desktop\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\MainWindow.baml
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\App.g.cs
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\Valen\Desktop\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.Cache
