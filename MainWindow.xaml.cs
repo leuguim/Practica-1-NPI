@@ -58,7 +58,7 @@ namespace Microsoft.Samples.Kinect.BodyBasics
         private bool GestureEndB = false;
 
         /// <summary>
-        /// True if position has been recognized, false otherwise
+        /// Number of gestures done
         /// </summary>
         private int GesturesDone = 0;
 
@@ -91,6 +91,16 @@ namespace Microsoft.Samples.Kinect.BodyBasics
         /// Brush used for drawing not reached goals
         /// </summary>
         private readonly Brush goalNotReachedBrush = new SolidColorBrush(Color.FromArgb(64, 255, 0, 0));
+
+        /// <summary>
+        /// Brush used for drawing gesture line
+        /// </summary>
+        private readonly Brush gestureLineBrush = new SolidColorBrush(Color.FromArgb(150, 255, 215, 0));
+
+        /// <summary>
+        /// Brush used for drawing gesture points
+        /// </summary>
+        private readonly Brush gesturePointBrush = new SolidColorBrush(Color.FromArgb(150, 255, 165, 0));
 
         /// <summary>
         /// Brush used for drawing hands that are currently tracked as closed
@@ -447,7 +457,7 @@ namespace Microsoft.Samples.Kinect.BodyBasics
 
                                 if (!GestureStartB)
                                 {
-                                    GestureStartB = this.DrawGoal(gesture_start, joints[JointType.HandRight], dc);
+                                    GestureStartB = this.DrawGesturePoint(gesture_start, joints[JointType.HandRight], dc);
                                 }
                                 //We have to reach the new goal without going out of the limits (up and down)
                                 else if (
@@ -458,8 +468,14 @@ namespace Microsoft.Samples.Kinect.BodyBasics
                                     GestureStartB = false;
                                 }
                                 else {
-                                    GestureEndB = this.DrawGoal(gesture_end, joints[JointType.HandRight], dc);
-
+                                    GestureEndB = this.DrawGesturePoint(gesture_end, joints[JointType.HandRight], dc);
+                                    //Draw the line to help the user:
+                                    DepthSpacePoint gesture_start_depth = this.coordinateMapper.MapCameraPointToDepthSpace(gesture_start.Position);
+                                    Point gesture_start_2D = new Point(gesture_start_depth.X, gesture_start_depth.Y);
+                                    DepthSpacePoint gesture_end_depth = this.coordinateMapper.MapCameraPointToDepthSpace(gesture_end.Position);
+                                    Point gesture_end_2D = new Point(gesture_end_depth.X, gesture_end_depth.Y);
+                                    Pen line_pen = new Pen(gestureLineBrush, 10);
+                                    dc.DrawLine(line_pen, gesture_start_2D, gesture_end_2D);
                                     //If we reach the second goal without moving out, add +1 and reset
                                     if (GestureEndB)
                                     {
@@ -598,6 +614,32 @@ namespace Microsoft.Samples.Kinect.BodyBasics
 	        }
             return false;
         }
+
+
+        private bool DrawGesturePoint(Joint goal, Joint hand, DrawingContext drawingContext)
+        {
+            // Creamos un factor para darle sensación de profundidad, cuanto más grande, más cerca
+            double ellipseSize = 2.0 / goal.Position.Z;
+            // Pasamos las coordenadas del mundo a coordenadas de pantalla
+            DepthSpacePoint depth_goal = this.coordinateMapper.MapCameraPointToDepthSpace(goal.Position);
+            Point goal_2D = new Point(depth_goal.X, depth_goal.Y);
+
+            // Si la mano está dentro del objetivo, devuelve true
+            if ((hand.Position.X < goal.Position.X + 0.05 && hand.Position.X > goal.Position.X - 0.05) &&
+                (hand.Position.Y < goal.Position.Y + 0.05 && hand.Position.Y > goal.Position.Y - 0.05) &&
+                (hand.Position.Z < goal.Position.Z + 0.05 && hand.Position.Z > goal.Position.Z - 0.05))
+            {
+                drawingContext.DrawEllipse(this.gesturePointBrush, null, goal_2D, ellipseSize * HandSize, ellipseSize * HandSize);
+                return true;
+            }
+            // Si no, false
+            else
+            {
+                drawingContext.DrawEllipse(this.gesturePointBrush, null, goal_2D, ellipseSize * HandSize, ellipseSize * HandSize);
+            }
+            return false;
+        }
+
 
 
         private double DrawFloor(Joint foot_left, Joint foot_right, Joint head, DrawingContext drawingContext)
